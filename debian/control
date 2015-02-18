@@ -1,0 +1,15 @@
+Source: opkg-tools
+Section: devel
+Priority: optional
+Maintainer: Oscar Aceña Herrera <oscaracena@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://bitbucket.org/arco_group/opkg-tools
+
+Package: opkg-tools
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python
+Description: Tools to generate OpenWrt packages
+ Some basic tools to generate and compile OpenWrt opkg packages. It
+ provides a dh_make like tool (called opkg-make) and a builder tool,
+ called opkg-build.
