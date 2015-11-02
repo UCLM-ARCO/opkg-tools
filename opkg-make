@@ -48,7 +48,6 @@ class OpkgMaker:
 
             src = os.path.join(self.opkg_dir_path, "postinst.ex")
             dst = os.path.join(self.opkg_dir_path, "postinst")
-            print "SOURCE:", src, os.path.exists(src)
             self.render_template(src, dst)
             os.remove(src)
 
@@ -89,7 +88,7 @@ if __name__ == "__main__":
     args.add_argument('-i', action="store_true", dest="init",
                       help='Include init script')
     args.add_argument('-f', action="store_true", dest="force",
-                      help='Overwrite and force creatin')
+                      help='Overwrite and force creating')
     args = args.parse_args()
 
     OpkgMaker(args).run()
