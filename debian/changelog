@@ -1,3 +1,9 @@
+opkg-tools (0.20151108-1) unstable; urgency=low
+
+  * New release
+
+ -- Oscar Aceña Herrera <oscaracena@gmail.com>  Sun, 08 Nov 2015 17:05:16 +0100
+
 opkg-tools (0.20150312-1) unstable; urgency=low
 
   * New release, added depends

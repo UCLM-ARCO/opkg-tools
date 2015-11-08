@@ -85,10 +85,13 @@ class InstallFile:
             return retval
 
         with file(self.install_file) as src:
-            while True:
-                line = src.readline()
+            for line in src:
+                line = line.strip()
                 if not line:
-                    break
+                    continue
+
+                if line.startswith("#"):
+                    continue
 
                 path, name = map(str.strip, line.split())
                 if name.endswith("/"):
